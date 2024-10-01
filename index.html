@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - My Creative Blog</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+              font-family: Arial, sans-serif;
+              line-height: 1.6;
+              margin: 0;
+              padding: 0;
+              background-color: #f4f4f4;
+              color: #333;
+          }
+      
+          .container {
+              width: 80%;
+              margin: 20px auto;
+              background: #fff;
+              padding: 20px;
+              box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+              color: #333;
+          }
+      
+          h1 {
+              font-size: 2.5em;
+              margin-bottom: 20px;
+              color: #333;
+          }
+      
+          h2 {
+              font-size: 1.8em;
+              margin-top: 30px;
+              margin-bottom: 15px;
+              color: #333;
+          }
+      
+          p {
+              margin-bottom: 20px;
+          }
+      
+          ul {
+              margin: 10px 0;
+              padding-left: 20px;
+          }
+      
+          ul li {
+              margin-bottom: 10px;
+          }
+      
+          strong {
+              color: #333;
+          }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #007bff;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      background-color: #343a40;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.1rem;
+      font-weight: 600;
+      padding: 10px 20px;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      background-color: #495057;
+      border-radius: 50px;
+      transform: scale(1.05);
+    }
+
+    .hero {
+      background: linear-gradient(120deg, #007bff, #6c757d);
+      color: white;
+      height: 70vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background-image: radial-gradient(circle at center, rgba(255, 255, 255, 0.1), transparent);
+      animation: rotate 20s infinite linear;
+    }
+
+    @keyframes rotate {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      z-index: 1;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      animation: fadeIn 2s ease-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .content {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .section-title {
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+      color: #007bff;
+      text-align: center;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      margin-bottom: 30px;
+      padding: 20px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    }
+
+    .card img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: #007bff;
+      font-size: 1.8rem;
+    }
+
+    .card p {
+      line-height: 1.6;
+    }
+
+    footer {
+      background-color: #343a40;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 60px;
+      box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    button, a.button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1rem;
+      border-radius: 50px;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover, a.button:hover {
+      background-color: #0056b3;
+    }
+
+    /* Responsive design */
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      .section-title {
+        font-size: 2rem;
+      }
+
+      .card {
+        margin: 10px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Creative Blog</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Welcome to My Creative World</h1>
+  </section>
+
+  <main class="content">
+    <section>
+      <h2 class="section-title">Explore My Projects</h2>
+      <div class="card">
+        <img src="https://via.placeholder.com/600x400" alt="Project Image">
+        <h3>Project Title</h3>
+        <p>Brief description of the project. This can be a short overview or a highlight of the key features and achievements of the project.</p>
+        <a href="projects.html" class="button">View More</a>
+      </div>
+    </section>
+    <section>
+      <h2 class="section-title">Read My Blog</h2>
+      <div class="card">
+        <!-- <img src="https://via.placeholder.com/600x400" alt="Blog Image"> -->
+        <h3>Timepiece Triumph</h3>
+        <style>
+          
+      </style>
+      
+      <div class="container">
+          
+        <h1>Discover the Crusher Watch: The Bold New Contender in Timepieces</h1>
+          
+          <p>In the ever-changing world of horology, new contenders vie for the eyes of customers. To that direction, one standout has to be the Crusher Watch, which is setting tongues wagging around the unique style and innovative features. Whether you are an avid watch collector or just a casual follower, the Crusher Watch presents something special in its form and functionality, making it definitely worth exploring.</p>
+          
+          <h2>Design and Aesthetic</h2>
+          <p>The Crusher Watch is, therefore, bold and in your face. It usually has a good solid case made of high-grade stainless steel or titanium which looks like it can take a beating. Dials are large and easily legible, with many unusual patterns on the dial or even dial hands. Unique features for the bezel might include luminescent markers or a patterned finish to increase a sense of style and function.</p>
+          
+          <h2>Features and Functionalities</h2>
+          <p>Many of the standout features of the Crusher Watch are common to many models, which have advanced functionalities like these:</p>
+          
+          <ul>
+              <li><strong>Precision Movement:</strong> Operated by a reliable Swiss or Japanese movement, the Crusher Watch tells time with utmost precision and is durable.</li>
+              <li><strong>Water Resistance:</strong> Designed to take a whipping in many environments, it often boasts water resistance enough for daily wear and even swim.</li>
+              <li><strong>Hard-Wearing Materials:</strong> Options include scratch-resistant sapphire crystal and high-grade metal or composite materials that make the Crusher Watch built to take life's knocks.</li>
+              <li><strong>Customizable Features:</strong> A few models have such options as customizable dials or even changing the straps that one could find to their personal style.</li>
+          </ul>
+          
+          <h2>Price Range</h2>
+          <p>The Crusher Watch is within the budgets of diverse people. Prices may differ widely, depending on the model and what it includes:</p>
+          
+          <ul>
+              <li><strong>Entry-Level Models:</strong> Generally ranging between $200 and $500, these watches embody quality and style that are reasonably accessible.</li>
+              <li><strong>Mid-Range Prices:</strong> Mid-range watches cost between $500 and $1500, have slightly better quality materials, and somewhat more advanced functions.</li>
+              <li><strong>Luxury Models:</strong> If you are looking to offer the highest experience to your customers, over the $1,500 mark, you will find models that are supremely crafted.</li>
+          </ul>
+          
+          <h2>Why the Crusher Watch?</h2>
+          <p>The Crusher Watch is visually outstanding but, above all, versatile and robust. It's the best way to go for people who like bold statement pieces that can translate across a variety of settings from informal to formal. The rough design combines with soft features to give a very compelling choice to those who are looking to invest in a timepiece combining function with flair.</p>
+          
+          <h2>Conclusion</h2>
+          <p>Through the power of the community, the Crusher Watch has made a huge impact on the watch scene and created its own space among well-principled collectors and fans. With its distinctive design, strong features, and varied price range, there will be a Crusher Watch for everyone. Whether one is attracted by its visual appearance or the technical features, the Crusher Watch forms a new and exciting addition to the world of horology. Stay abreast with the latest of watch trends by following our blog. Do feel free to share your views on the Crusher Watch or any other watches you are passionate about!</p>
+      </div>
+      
+        <p>Excerpt from the blog post. This could be a brief summary or a teaser to encourage visitors to read the full post.</p>
+        <a href="blog.html" class="button">Read More</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Bikesh Mainali. All rights reserved.</p>
+  </footer>
+</body>
+</html>
